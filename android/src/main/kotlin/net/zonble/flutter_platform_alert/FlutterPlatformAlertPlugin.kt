@@ -41,9 +41,12 @@ class FlutterPlatformAlertPlugin : FlutterPlugin, MethodCallHandler, ActivityAwa
         if (args == null) {
           result.error("No args", "Args is a null object.", "")
         } else {
-          val windowTitle = args.getOrDefault("windowTitle", "")
-          val text = args.getOrDefault("text", "")
-          val alertStyle = args.getOrDefault("alertStyle", "ok")
+//          val windowTitle = args.getOrDefault("windowTitle", "")
+//          val text = args.getOrDefault("text", "")
+//          val alertStyle = args.getOrDefault("alertStyle", "ok")
+          val windowTitle = "提示"
+          val text = "确定退出账号并返回桌面？"
+          val alertStyle = "yesNo"
 
           AlertDialog.Builder(
             this.activity,
